@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//cdn.muicss.com/mui-0.10.1/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="//cdn.muicss.com/mui-0.10.1/js/mui.min.js"></script>
+    <title>HaikuBlog</title>
+</head>
+<body class="hide-sidedrawer">
+    <button class="mui-btn mui-btn--fab mui-btn--accent" id="modal-btn">Войти</button>
+
+    <div id="sidebar">
+    </div>
+
+    <div id="content">
+        <header id="header">      
+            <div class="mui-appbar mui--appbar-line-height">
+              <div class="mui-container-fluid">
+                <div class="mui--text-white mui--text-display1 mui--align-middle">
+                    HaikuBlog
+                </div>
+
+                <!-- <a class="sidedrawer-toggle mui--visible-xs-inline-block mui--visible-sm-inline-block js-show-sidedrawer">☰</a>
+                <a class="sidedrawer-toggle mui--hidden-xs mui--hidden-sm js-hide-sidedrawer">☰</a>
+                <span class="mui--text-title mui--visible-xs-inline-block">Brand.io</span> -->
+              </div>
+            </div>
+        </header>
+
+        <br>
+        <br>
+    
+        <div id="content-wrapper">
+            <br>
+
+            <h2>Это HaikuBlog - место, где ты можешь делиться шутками</h2>
+            <div class="mui-divider"></div>
+
+            <br>
+            <br>
+
+            <form id="form" class="mui-form">
+                <div class="mui-textfield mui-textfield--float-label">
+                    <textarea id="q-input"></textarea>
+                    
+                    <label for="q-input">Шуточка</label>
+                </div>
+
+                <div class="mui-textfield mui-textfield--float-label">
+                    <input type="text" id="n-input">
+                    
+                    <label for="q-input">Имя автора</label>
+                </div>
+                
+                <br>
+    
+                <button type="submit" class="mui-btn mui-btn--raised mui-btn--accent" id="submit-btn">Отправить</button>
+            </form>
+
+            <br>
+            <br>
+            <br>
+
+            <h3>HaikuBlog шутки уже здесь</h3>
+            <div class="mui-divider"></div>
+
+            <br>
+
+            <div class="mui--appbar-height">Кол-во: <span id="j-count"></span></div>
+        </div> 
+    
+        <footer id="footer">
+            <div class="mui-container-fluid">
+                <br>
+                Made by Saaliev Nazar
+
+                <div>HaikuBlog</div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

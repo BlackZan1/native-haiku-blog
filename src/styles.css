@@ -1,0 +1,126 @@
+@import './animate.css';
+
+body {
+    height: 120vh;
+}
+
+#modal-btn {
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    animation: bounceInUp 1s ease;
+    width: 70px;
+    height: 70px;
+    animation: fadeInUp 1s ease;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    display: block;
+    background: #2d80ce;
+    z-index: 5;
+    filter: drop-shadow(0px 0.5px 2px #323232);
+    animation: fadeInDown .6s ease;
+}
+
+#header {
+    width: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 6;
+    filter: drop-shadow(0px 0.5px 2px #323232);
+    animation: fadeInLeft .8s ease;
+    display: flex;
+    align-items: flex-start;
+}
+
+#header .mui-appbar {
+    display: flex;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#header, #header .mui-appbar {
+    background: dodgerblue;
+    border-radius: 0px 0px 20px 0px;
+}
+
+#content {
+    display: block;
+    margin: 30px 0px 30px 180px;
+}
+
+#q-input {
+    min-height: 60px;
+    max-height: 300px;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+#content-wrapper {
+    padding: 20px 25px 50px;
+    z-index: 999;
+    animation: fadeIn 2.2s ease;
+}
+
+#footer {
+    /* filter: drop-shadow(0px -0.5px 2px #a9a9a9); */
+    background: #1063b2;
+    position: fixed;
+    bottom: 0;
+    left: 100px;
+    right: 0;
+    height: 70px;
+    animation: fadeInRight .7s ease;
+    color: #fff;
+}
+
+#form {
+    width: 600px;
+}
+
+.joke-item {
+    margin: 20px 0;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 15px 20px;
+    min-height: 300px;
+    max-height: 500px;
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+    overflow-y: auto;
+}
+
+.modal-content h1 {
+    text-align: center;
+}
+
+.user-block {
+    position: fixed;
+    bottom: 90px;
+    right: 160px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px 20px;
+    animation: fadeInUp .8s ease;
+}
+
+.user-block button {
+    margin-top: 10px;
+}
